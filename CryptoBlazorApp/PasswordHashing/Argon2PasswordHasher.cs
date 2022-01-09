@@ -30,7 +30,7 @@
             byte[] src = Convert.FromBase64String(hash);
             byte[] salt = new byte[0x10];
             Buffer.BlockCopy(src, 1, salt, 0, 0x10);
-            byte[] hashedPassword = new byte[0x20];
+            byte[] hashedPassword = new byte[0x10];
             Buffer.BlockCopy(src, 17, hashedPassword, 0, 16);
 
             var success = VerifyHash(providedPassword, salt, hashedPassword);
