@@ -35,7 +35,7 @@
 
             var success = VerifyHash(providedPassword, salt, hashedPassword);
 
-            return success ? PasswordVerificationResult.Success : PasswordVerificationResult.SuccessRehashNeeded;
+            return success ? PasswordVerificationResult.Success : PasswordVerificationResult.Failed;
         }
 
         private byte[] CreateSalt()
