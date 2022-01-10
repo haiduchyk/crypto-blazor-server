@@ -1,4 +1,4 @@
-﻿namespace CryptoBlazorApp.PasswordHashing
+﻿namespace CryptoBlazorApp.Hashing
 {
     using System;
     using System.Linq;
